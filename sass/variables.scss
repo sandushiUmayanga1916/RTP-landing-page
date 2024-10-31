@@ -1,0 +1,185 @@
+// ------------------------------------------
+// Color Palette
+// ------------------------------------------
+$color-white: #FFFFFF;
+$color-pearl-white: #F8F8F8;
+$color-black: #000000;
+$color-blue: #1E628C;
+$color-sky-blue: #2b83a5;
+$color-blue-light: #B6D1E2;
+$color-blue-lighter: #B3E4EA;
+$color-blue-light-medium: #99c2d1;
+$color-blue-medium: #2C83A5;
+$color-blue-dark: #13425E;
+$color-blue-darker: #1d4c65;
+$color-gray-darker: #14425e;
+$color-blue-gray: #DBE2E7;
+$color-blue-gray-dark: #1D628B;
+$color-blue-marine: #39B1BF;
+$color-gray-dark: #315972;
+$color-gray-light: #F6F6F6;
+$color-gray: #4e5f69;
+$color-gray-lighter: #dddddd;
+
+// ------------------------------------------
+// General Variables
+// ------------------------------------------
+$content-width: 865px;
+$font-family-base: 'Lato', sans-serif;
+$white-space: 20px;
+$container-max-width: 1200px;
+$grid-gutter: 15px;
+$transition-duration: 5s;
+$badge-grid-width: 142px;
+$grid-gap: 22px;
+
+// Font import
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+// ------------------------------------------
+// Breakpoint Mixins
+// ------------------------------------------
+@mixin max-479 {
+  @media (max-width: 479px) {
+    @content;
+  }
+}
+
+@mixin max-640 {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin max-767 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin max-991 {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin max-1920 {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin min-640 {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+// ------------------------------------------
+// Base Styles
+// ------------------------------------------
+body {
+  box-sizing: border-box;
+  font-family: $font-family-base;
+  color: $color-gray-dark;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: .31px;
+  margin: 0;
+  background-color: $color-pearl-white;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+// ------------------------------------------
+// Typography
+// ------------------------------------------
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 38px;
+  letter-spacing: .62px;
+  text-align: center;
+  color: $color-blue;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 22px;
+  letter-spacing: 0.49px;
+  line-height: 38px;
+  text-align: center;
+  color: $color-black;
+}
+
+// ------------------------------------------
+// Components
+// ------------------------------------------
+.ci-calculator {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: 0.4em;
+}
+
+// Table styles
+.table-header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .31px;
+  color: $color-black;
+}
+
+.responsive-table {
+  &-cell {
+    display: block;
+
+    @include min-640 {
+      display: table-cell;
+    }
+  }
+
+  &-label {
+    display: flex;
+
+    @include min-640 {
+      display: table-cell;
+    }
+
+    &:before {
+      flex: 0 0 33%;
+      content: attr(data-label);
+      text-align: left;
+      font-weight: bold;
+      padding-right: 20px;
+
+      @include min-640 {
+        display: none;
+      }
+    }
+  }
+}
+
+// Button styles
+.button {
+  display: inline-block;
+  font-size: 14px;
+  color: $color-white;
+  background-color: $color-blue;
+  text-decoration: none;
+  margin: 10px 0px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  font-weight: 400;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

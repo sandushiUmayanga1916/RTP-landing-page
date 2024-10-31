@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Transparency Platform Prototype</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="https://www.thecirculateinitiative.org/">
+                <img alt="The Circulate Initiative" src="images/TCI-logo.webp" />
+            </a>
+        </div>
+        <!-- Navigation -->
+        <nav class="main">
+            <!-- Mobile Logo -->
+            <div class="menu--wrapper">
+                <div class="mobile-logo">
+                    <a href="https://www.thecirculateinitiative.org/">
+                        <img alt="The Circulate Initiative" src="images/TCI-logo.webp" />
+                    </a>
+                </div>
+                <!-- Main Navigation Menu -->
+                <ul class="menu">
+                    <!-- About Us -->
+                    <li>
+                        <a href="https://www.thecirculateinitiative.org/our-story">About Us</a>
+                    </li>
+                    <!-- Programs & Partnerships Dropdown -->
+                    <li>
+                        <a href="" aria-haspopup="true" aria-expanded="false">
+                            Programs & Partnerships
+                            <svg viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#14425e" d="M0 12.438h48L24 35.562z" class="fill-241f20"></path>
+                            </svg>
+                        </a>
+                        <div class="submenu--wrapper">
+                            <ul>
+                                <li><a
+                                        href="https://www.thecirculateinitiative.org/programs-and-partnerships/">Overview</a>
+                                </li>
+                                <li><a href="https://www.thecirculateinitiative.org/responsible-sourcing-initiative/">Responsible
+                                        Sourcing</a></li>
+                                <li><a href="https://www.thecirculateinitiative.org/urban-ocean/">Urban Ocean®</a></li>
+                                <li><a href="https://www.nextwaveplastics.org/">NextWave Plastics</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Research & Tools Dropdown -->
+                    <li>
+                        <a href="" aria-haspopup="true" aria-expanded="false">Research & Tools<svg viewBox="0 0 48 48"
+                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#14425e" d="M0 12.438h48L24 35.562z" class="fill-241f20"></path>
+                            </svg></a>
+
+                        <div class="submenu--wrapper">
+                            <ul>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/research-and-tools/">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/city-waste-landscapes/">City Waste
+                                        Landscape</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.thecirculateinitiative.org/plastics-circularity-investment-tracker/">Plastics
+                                        Circularity Investment Tracker</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.thecirculateinitiative.org/plastic-lifecycle-assessment-calculator-for-the-environment-and-society/">Plastic
+                                        Lifecycle Assessment Calculator for the Environment and Society</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.thecirculateinitiative.org/recycled-plastics-prices-and-policy-tool/">Pricing
+                                        Transparency – Recycled Plastics</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Resources Dropdown -->
+                    <li>
+                        <a href="" aria-haspopup="true" aria-expanded="false">Resources <svg viewBox="0 0 48 48"
+                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#14425e" d="M0 12.438h48L24 35.562z" class="fill-241f20"></path>
+                            </svg></a>
+
+                        <div class="submenu--wrapper">
+                            <ul>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/blog/">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/knowledge-bank/">Knowledge Bank</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/annual-reports/">Annual Reports</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/videos/">Videos</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.circularityconcepts.org/">Circularity Concepts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- News & Events Dropdown -->
+                    <li>
+                        <a href="" aria-haspopup="true" aria-expanded="false">News & Events <svg viewBox="0 0 48 48"
+                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#14425e" d="M0 12.438h48L24 35.562z" class="fill-241f20"></path>
+                            </svg></a>
+
+                        <div class="submenu--wrapper">
+                            <ul>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/events">Press Releases</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/events">Media Coverage</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/events">Events</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Contact Us Dropdown -->
+                    <li>
+                        <a href="https://www.thecirculateinitiative.org/contact-us/">Contact Us</a>
+                    </li>
+
+                    <!-- Search Icon -->
+                    <li class="search-icon">
+                        <a href="#" aria-label="Search">
+                            <?xml version="1.0" ?><svg class="feather feather-search" fill="none" height="24"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" x2="16.65" y1="21" y2="16.65" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Search Overlay -->
+                <div class="search-overlay">
+                    <div class="search-container">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Search...">
+                            <button class="clear-text" style="display: none;">×</button>
+                        </div>
+                        <div class="search-controls">
+                            <button class="search-icon">
+                                <svg class="feather feather-search" fill="none" height="24" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                    width="24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" x2="16.65" y1="21" y2="16.65" />
+                                </svg>
+                            </button>
+                            <button class="close-icon">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Toggle -->
+            <div class="nav--toggle">
+                <span class="nav--toggle-bar first"></span>
+                <span class="nav--toggle-bar second"></span>
+                <span class="nav--toggle-bar third"></span>
+            </div>
+        </nav>
+
+    </header>
+    <!-- hero section -->
+    <section class="hero">
+        <div class="single-item">
+            <div class="container">
+                <div class="content-wrap">
+                    <h1 class="title">Resource Transparency Platform -
+                        Prototype</h1>
+                </div>
+            </div>
+            <div class="img-wrapper optimized-img-wrapper"
+                style="background-image: url('path/to/your/optimized-image.jpg');">
+                <!-- Desktop -->
+                <img class="bg-image d-none d-md-block" src="./images/Plastics-Circularity-Investment-Tracker.png"
+                    alt="Description of desktop image" loading="lazy" decoding="async" role="presentation">
+                <!-- Mobile -->
+                <img class="bg-image d-block d-md-none" src="/images/Plastics-Circularity-Investment-Tracker.png"
+                    alt="Description of mobile image" loading="lazy" decoding="async" role="presentation"> <!-- Replace with dynamic mobile image URL
+            </div> -->
+            </div>
+    </section>
+
+    <!-- laptop screen section -->
+    <section class="laptop-screen-layout">
+        <div class="container">
+            <div class="row">
+                <p class="note"> *You are currently exploring a beta version of the Resource Transparency Platform tool.
+                    Please note that the tool is under development and the results provided are for demonstration
+                    purposes only.</p>
+                <div class="col-12 col-md-6 col-lg-6">
+
+                    <div class="content-wrapper">
+                        <div class="description">
+                            <!-- Replace with your content -->
+                            <p> The Resource Transparency Platform offers users a one-stop, searchable database of
+                                information on
+                                country-level public, and private financial flows across the plastics lifecycle to
+                                address plastic pollution.</p>
+                            <ul>
+                                <li>Plastic Pollution Financial Flow information is available by year, geography,
+                                    sources,
+                                    applications, and types of financial flows that took place between January 1, 2018
+                                    and
+                                    December 31, 2023.</li>
+                                <li>Track the direction and distribution of financial flows to mobilize, and direct
+                                    capital to
+                                    high-impact pathways.</li>
+                                <li>Gain tailored insights to your queries through the AI-powered search feature.</li>
+                            </ul>
+                            <p> For example, the tool can be used to track the amount of development finance committed
+                                to Africa since 2018 and the share of the commitments that have been disbursed.</p>
+                        </div>
+                        <div class="action">
+                            <a href="#" target="_blank" class="btn btn-secondary"> Access Tool</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="image-content">
+                        <div class="wrapper">
+                            <div class="laptop">
+                                <img class="img-fluid" src="./images/Laptop.png" alt="laptop">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- full image section -->
+    <section class="full_side_image_layout">
+        <div class="container-fluid">
+            <div class="inner_row">
+                <div class="row">
+                    <!-- Content Column -->
+                    <div class="col-12 col-md-6 col-lg-6 ps-0">
+                        <div class="content_wrap">
+                            <h3 class="title"> An estimated US$ 15.4 trillion in private sector
+                                investments and US$ 1.5 trillion in public
+                                expenditure are needed between 2025 and 2040
+                                to reduce annual mismanaged plastic volumes by
+                                90% relative to 2019 levels.</h3>
+                            <div class="description">
+                                <p>There is limited transparency around the deployment of capital, the financing gaps
+                                    that exist,
+                                    and of capital mobilization or redirection needed to solve the plastic pollution
+                                    challenge. Data
+                                    on finance that is available for tackling plastic pollution is a critical input to
+                                    ensure that
+                                    sufficient capital is mobilized from different sources and directed towards relevant
+                                    geographies and solutions.</p>
+                                <p> To address this knowledge gap, The Circulate Initiative plans to develop a
+                                    <b>Resource
+                                        Transparency Platform</b> to provide a transparent view of all <b>Plastic
+                                        Pollution
+                                        Financial Flows.</b>
+                                    Plastic pollution financial flows refers to financing targeted towards addressing
+                                    plastic
+                                    pollution through circular, non-circular, or other supporting pathways.</p>
+                                <p> With more than 40 data fields captured across domestic finance, development finance,
+                                    the
+                                    financial mechanism (subject to confirmation), and private finance, the Resource
+                                    Transparency platform aims to support decision making through:</p>
+                                <ul>
+                                    <li> Improved availability of consolidated financial data for national action plans,
+                                        needs
+                                        assessments, and targeted funding calls.</li>
+                                    <li> Visibility into existing financial flows, and where additional private
+                                        investments can be
+                                        complementary.</li>
+                                    <li> Insights on the impact of existing policies and evidence- base for new
+                                        financial
+                                        policy-making</li>
+                                </ul>
+                                <p> The Resource Transparency Platform builds on The Circulate Initiative’s expertise in
+                                    developing
+                                    the <a href="#">Plastics Circularity Investment Tracker</a>, the world’s first tool
+                                    to track the scale of private
+                                    investments driving a circular economy for plastics globally</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image Column -->
+                    <div class="col-12 col-md-6 col-lg-6 pe-0">
+                        <div class="img_wrapper">
+                            <img class="bg_image img-fluid"
+                                src="/images/plastic-bales-at-the-waste-processing-plant-separ.png"
+                                alt="Image description" loading="lazy" decoding="async" role="presentation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- scope of the platform section -->
+    <section class="list_card_layout">
+        <div class="container">
+            <div class="content_wrap">
+                <h2 class="title"> Scope of the Platform</h2>
+
+                <div class="card_list">
+                    <div class="light_cards">
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 g-3"
+                            style="display: flex; justify-content: center;">
+                            <!-- Single Card -->
+                            <div class="col">
+                                <div class="card h-100 single_card">
+                                    <div class="card-body">
+                                        <div class="img_wrapper">
+                                            <img class="icon_image img-fluid" src="/images/icon-calendar.png"
+                                                alt="Icon description" loading="lazy" decoding="async"
+                                                role="presentation">
+                                        </div>
+                                        <h4 class="card_title"> Year</h4>
+                                        <div class="card_info">
+                                            <p> Data provided in the platform is for the period of
+                                                January 1, 2018 to December 31, 2023.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 single_card">
+                                    <div class="card-body">
+                                        <div class="img_wrapper">
+                                            <img class="icon_image img-fluid" src="/images/icon-geography.png"
+                                                alt="Icon description" loading="lazy" decoding="async"
+                                                role="presentation">
+                                        </div>
+                                        <h4 class="card_title"> Geography</h4>
+                                        <div class="card_info">
+                                            <p> The platform consolidates information on public and
+                                                private financial flows that have taken place globally.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 single_card">
+                                    <div class="card-body">
+                                        <div class="img_wrapper">
+                                            <img class="icon_image img-fluid" src="/images/icon-sources.png"
+                                                alt="Icon description" loading="lazy" decoding="async"
+                                                role="presentation">
+                                        </div>
+                                        <h4 class="card_title"> Sources of Finance</h4>
+                                        <div class="card_info">
+                                            <p> The sources of finance captured in the platform
+                                                include both Public and Private sources. </p>
+                                            <ul>
+                                                <li>Public Finance
+                                                    <ul>
+                                                        <li>
+                                                            Domestic Finance
+                                                        </li>
+                                                        <li>
+                                                            Development Finance
+                                                        </li>
+                                                        <li>
+                                                            Multilateral Environmental Agreement
+                                                            Finance
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                            </ul>
+                                            <ul>
+                                                <li>Private Finance
+
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat card structure for more cards -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- who can use this platform section -->
+    <div class="card_grid_with_description_layout">
+        <div class="container">
+            <div class="content_wrap">
+                <h2 class="title"> Who can use this Platform</h2>
+            </div>
+            <div class="card_grid">
+                <div class="all_cards">
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 d-flex justify-content-center">
+                        <!-- Single Card -->
+                        <div class="col">
+                            <div class="card single_card h-100">
+                                <div class="card-body">
+                                    <div class="img_wrapper">
+                                        <img class="icon_image img-fluid" src="/images/icon-government.png" alt="icon"
+                                            loading="lazy" decoding="async" role="presentation">
+                                    </div>
+                                    <h5 class="card_title">Governments</h5>
+                                    <p class="card_info"> Member states can use the tool as a
+                                        go-to resource for monitoring
+                                        financial flows to make informed
+                                        financial decisions that align with
+                                        national priorities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card single_card h-100">
+                                <div class="card-body">
+                                    <div class="img_wrapper">
+                                        <img class="icon_image img-fluid" src="/images/icon-manager.png" alt="icon"
+                                            loading="lazy" decoding="async" role="presentation">
+                                    </div>
+                                    <h5 class="card_title">Multilateral Institutions</h5>
+                                    <p class="card_info"> Multilateral institutions, including
+                                        development banks, can analyze
+                                        financial flows to guide the
+                                        distribution of development
+                                        assistance packages, such as grants
+                                        and other concessional funding.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card single_card h-100">
+                                <div class="card-body">
+                                    <div class="img_wrapper">
+                                        <img class="icon_image img-fluid" src="/images/icon-institute.png" alt="icon"
+                                            loading="lazy" decoding="async" role="presentation">
+                                    </div>
+                                    <h5 class="card_title"> Financial institutions</h5>
+                                    <p class="card_info"> Banks and other financial
+                                        institutions can assess the regions
+                                        and solutions that have received
+                                        investment, which can support
+                                        their investment and loan
+                                        allocation decisions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card single_card h-100">
+                                <div class="card-body">
+                                    <div class="img_wrapper">
+                                        <img class="icon_image img-fluid" src="/images/icon-corperation.png" alt="icon"
+                                            loading="lazy" decoding="async" role="presentation">
+                                    </div>
+                                    <h5 class="card_title"> Corporates</h5>
+                                    <p class="card_info">Corporates can identify
+                                        investment trends and gaps in the
+                                        value chain to inform their
+                                        business strategies.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat card structure for more cards -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- resources section -->
+    <section class="solid_light_card_layout">
+        <div class="container">
+            <h2 class="title">Resources</h2>
+            <div class="row card_list">
+                <!-- First Column -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 single_card">
+                        <div class="card-body">
+                            <div class="img_wrapper">
+                                <img class="icon_image img-fluid" src="/images/icon-glossary.png" alt="Card icon"
+                                    loading="lazy" decoding="async" role="presentation">
+                            </div>
+                            <h4 class="card_title">Glossary</h4>
+                            <div class="action_wrapper">
+                                <a target="_blank" href="#" rel="noopener noreferrer"
+                                    class="action btn btn-outline-primary">
+                                    Access the Glossary
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Column -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 single_card">
+                        <div class="card-body">
+                            <div class="img_wrapper">
+                                <img class="icon_image img-fluid" src="/images/icon-faq.png" alt="Card icon"
+                                    loading="lazy" decoding="async" role="presentation">
+                            </div>
+                            <h4 class="card_title">Frequently Asked Questions</h4>
+                            <div class="action_wrapper">
+                                <a target="_blank" href="#" rel="noopener noreferrer"
+                                    class="action btn btn-outline-primary">
+                                    View the FAQs
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more columns as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Primary Footer -->
+        <div class="footer--first">
+            <div class="footer--social">
+                <a title="YouTube" href="https://www.youtube.com/channel/UC4KKbLnONYLkw-9xFP15h0w" target="_blank"><svg
+                        viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path
+                            d="M501.303 132.765c-5.887-22.03-23.235-39.377-45.265-45.265C416.106 76.8 256 76.8 256 76.8s-160.107 0-200.039 10.7c-22.026 5.888-39.377 23.235-45.264 45.265C0 172.693 0 256.003 0 256.003s0 83.308 10.697 123.232c5.887 22.03 23.238 39.382 45.264 45.269C95.893 435.2 256 435.2 256 435.2s160.106 0 200.038-10.696c22.03-5.887 39.378-23.239 45.265-45.269 10.696-39.924 10.696-123.232 10.696-123.232s0-83.31-10.696-123.238ZM204.797 332.804V179.201l133.019 76.802-133.019 76.801Z"
+                            fill-rule="nonzero" fill="#ffffff" class="fill-000000"></path>
+                    </svg></a>
+                <a title="Twitter" href="https://twitter.com/CircInitiative" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" fill="none">
+                        <g clip-path="url(#a)">
+                            <path
+                                d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"
+                                fill="#ffffff" class="fill-000000"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="a">
+                                <path fill="#ffffff" d="M0 0h1200v1227H0z" class="fill-ffffff"></path>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a title="LinkedIn" href="https://www.linkedin.com/company/thecirculateinitiative/" target="_blank">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                            fill="#ffffff" class="fill-000000"></path>
+                    </svg></a>
+
+            </div>
+            <nav class="footer">
+                <ul class="menu">
+                    <li>
+                        <a href="https://www.thecirculateinitiative.org/our-story">About Us</a>
+                    </li>
+                    <li>
+                        <a href="" aria-haspopup="true" aria-expanded="false">Programs & Partnerships</a>
+                        <svg viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 12.438h48L24 35.562z"></path>
+                        </svg>
+                        <div class="submenu--wrapper">
+                            <ul>
+                                <li><a
+                                        href="https://www.thecirculateinitiative.org/programs-and-partnerships/">Overview</a>
+                                </li>
+                                <li><a href="https://www.thecirculateinitiative.org/responsible-sourcing-initiative/">Responsible
+                                        Sourcing</a></li>
+                                <li><a href="https://www.thecirculateinitiative.org/urban-ocean/">Urban Ocean®</a></li>
+                                <li><a href="https://www.nextwaveplastics.org/">NextWave Plastics</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" aria-haspopup="true" aria-expanded="false">Research & Tools</a>
+                        <svg viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#ffffff" d="M0 12.438h48L24 35.562z" class="fill-241f20"></path>
+                        </svg>
+                        <div class="submenu--wrapper">
+                            <ul>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/research-and-tools/">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/city-waste-landscapes/">City Waste
+                                        Landscape</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.thecirculateinitiative.org/plastics-circularity-investment-tracker/">Plastics
+                                        Circularity Investment Tracker</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.thecirculateinitiative.org/plastic-lifecycle-assessment-calculator-for-the-environment-and-society/">Plastic
+                                        Lifecycle Assessment Calculator for the Environment and Society</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.thecirculateinitiative.org/recycled-plastics-prices-and-policy-tool/">Pricing
+                                        Transparency – Recycled Plastics</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" aria-haspopup="true" aria-expanded="false">Resources</a>
+                        <svg viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#ffffff" d="M0 12.438h48L24 35.562z" class="fill-241f20"></path>
+                        </svg>
+                        <div class="submenu--wrapper">
+                            <ul>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/blog/">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/knowledge-bank/">Knowledge Bank</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/annual-reports/">Annual Reports</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/videos/">Videos</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.circularityconcepts.org/">Circularity Concepts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" aria-haspopup="true" aria-expanded="false">News & Events</a>
+                        <svg viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#ffffff" d="M0 12.438h48L24 35.562z" class="fill-241f20"></path>
+                        </svg>
+                        <div class="submenu--wrapper">
+                            <ul>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/events">Press Releases</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/events">Media Coverage</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.thecirculateinitiative.org/events">Events</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.thecirculateinitiative.org/contact-us/">Contact Us</a>
+                    </li>
+            </nav>
+
+            <div class="footer--copyright">
+                <p>
+                    © 2024, The Circulate Initiative A U.S. Registered 501(c)(3) organization</br>
+                    <a href="https://www.thecirculateinitiative.org/privacy-policy" target="_self">Privacy policy</a> |
+                    <a href="https://www.thecirculateinitiative.org/terms" target="_self">Terms of Use</a> | <a
+                        href="https://www.thecirculateinitiative.org/wp-content/uploads/Code-of-Conduct-October-2023.pdf"
+                        target="_self">Partner Code of Conduct
+
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Secondary Footer -->
+        <div class="footer--second">
+            <div class="footer--social">
+
+                <a title="YouTube" href="https://www.youtube.com/channel/UC4KKbLnONYLkw-9xFP15h0w" target="_blank">
+                    <div class="socil-icon">
+                        <svg viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                            <path
+                                d="M501.303 132.765c-5.887-22.03-23.235-39.377-45.265-45.265C416.106 76.8 256 76.8 256 76.8s-160.107 0-200.039 10.7c-22.026 5.888-39.377 23.235-45.264 45.265C0 172.693 0 256.003 0 256.003s0 83.308 10.697 123.232c5.887 22.03 23.238 39.382 45.264 45.269C95.893 435.2 256 435.2 256 435.2s160.106 0 200.038-10.696c22.03-5.887 39.378-23.239 45.265-45.269 10.696-39.924 10.696-123.232 10.696-123.232s0-83.31-10.696-123.238ZM204.797 332.804V179.201l133.019 76.802-133.019 76.801Z"
+                                fill-rule="nonzero" fill="#ffffff" class="fill-000000"></path>
+                        </svg>
+                    </div>
+                </a>
+                <a title="Twitter" href="https://twitter.com/CircInitiative" target="_blank">
+                    <div class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" fill="none">
+                            <g clip-path="url(#a)">
+                                <path
+                                    d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"
+                                    fill="#ffffff" class="fill-000000"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#ffffff" d="M0 0h1200v1227H0z" class="fill-ffffff"></path>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </a>
+                <a title="LinkedIn" href="https://www.linkedin.com/company/thecirculateinitiative/" target="_blank">
+                    <div class="social-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                                fill="#ffffff" class="fill-000000"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="footer--newsletter">
+                <a href="https://mailchi.mp/5c5b4f6b298e/the-circulate-initiative" target="_blank">Sign up to our
+                    newsletter</a>
+            </div>
+            <div class="footer--location">
+                The Circulate <strong>Initiative</strong><br />
+                60 East 42nd Street, Suite 3130, New York, NY 10165
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

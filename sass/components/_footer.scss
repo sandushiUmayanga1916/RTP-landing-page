@@ -1,0 +1,137 @@
+@use '../variables.scss' as *; 
+footer {
+   background: $color-gray-darker; 
+    padding: 26px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff; 
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) { 
+    footer {
+        padding: 70px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1400px) { 
+    footer {
+        padding: 70px 300px;
+    }
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a.current,
+footer a:hover {
+    color: #0077cc; 
+}
+
+.footer--first .footer--social {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .footer--first .footer--social {
+        display: none;
+    }
+}
+
+.footer--second {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer--second .footer--social {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .footer--second .footer--social {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.footer--social {
+    margin-bottom: 20px;
+}
+
+.footer--social a {
+    margin-right: 14px;
+}
+
+@media (min-width: 768px) {
+    .footer--social a {
+        margin-right: 0;
+        margin-left: 30px;
+    }
+}
+
+.footer--social svg {
+    width: 20px;
+    height: 20px;
+}
+
+nav.footer {
+    display: block;
+}
+
+@media (min-width: 992px) { 
+    nav.footer {
+        display: block;
+    }
+}
+
+.footer--site-name {
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .footer--site-name {
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+}
+
+.footer--newsletter {
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .footer--newsletter {
+        margin-bottom: 34px;
+        text-align: right;
+        font-size: 18px;
+    }
+}
+
+.footer--copyright,
+.footer--location {
+    font-size: 18px;
+    margin-bottom: 16px;
+    margin-top: auto;
+}
+
+@media (min-width: 768px) {
+    .footer--copyright,
+    .footer--location {
+        font-size: 18px;
+    }
+}
+
+.footer--location {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .footer--location {
+        text-align: right;
+    }
+}

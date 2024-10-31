@@ -1,0 +1,301 @@
+@use '../variables.scss' as *; 
+@media (min-width: 992px) { /* $screen-l */
+  header {
+    position: relative;
+  }
+  nav.main {
+    margin: 0px 0px 5px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0;
+    position: relative; 
+    .menu--wrapper {
+      .mobile-logo {
+        display: none; 
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: block;
+      position: relative;
+      white-space: wrap;
+
+      &:hover {
+        a {
+          &::after {
+            width: 100%; 
+          }
+        }
+
+        ul {
+          opacity: 1;
+          max-height: 400px; 
+          visibility: visible;
+          padding: 10px 3px 5px 3px;
+          width: 300px;
+
+          li {
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    li ul {
+      max-height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0;
+      transition: max-height 0.25s ease, opacity 0.25s ease-in-out, visibility 0.25s;
+      position: absolute;
+      z-index: 3000;
+      top: 100%;
+      left: 0;
+      background-color: #2783a4;
+      border-radius: 10px;
+      padding: 0;
+
+      li {
+        margin-bottom: 5px;
+        visibility: hidden;
+      }
+    }
+
+    .menu {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    // Main menu items: Keep the hover underline effect
+    li>a {
+      display: flex;
+      align-items: center;
+      margin-right: 12px;
+      padding: 10px;
+      color: $color-gray-dark;
+      text-decoration: none;
+      position: relative;
+
+      svg {
+        width: 9px;
+        height: auto;
+        margin-left: 5px;
+      }
+
+      &.current {
+        color: $color-gray-darker;
+      }
+
+      &:hover {
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          height: 1px;
+          background-color: $color-gray-darker;
+          transition: width 0.3s ease-in-out;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 1px;
+        background-color: $color-gray-darker;
+        transition: width 0.3s ease-in-out;
+      }
+    }
+
+    // Adjust SVG styles
+    li>svg {
+      width: 8px; // Adjust the width of the SVG
+      height: auto;
+      margin-left: 5px; 
+      vertical-align: middle;
+    }
+
+    // Submenu items
+    li ul li a {
+      text-decoration: none;
+      color: $color-white;
+
+      &::after {
+        display: none; // This removes the underline animation
+      }
+
+      &:hover {
+        color: $color-blue-light;
+      }
+    }
+
+    // Search Icon and Search Box
+    .search-icon {
+      display: flex;
+      cursor: pointer;
+
+      a {
+        display: flex;
+
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+
+        &::after {
+          display: none; // This removes the underline animation
+        }
+      }
+    }
+
+    .search-overlay {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      position: fixed; // Change to fixed for full viewport coverage
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: $color-pearl-white;
+      z-index: 2000; // Increased z-index to ensure it's above other elements
+
+      .search-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 100%;
+        padding: 35px;
+        background-color: $color-pearl-white;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the content */
+        z-index: 2001;
+
+        .input-wrapper {
+          position: relative;
+          flex: 0 1 1000px;
+          margin-right: 10px;
+
+          input {
+            flex: 0 1 1000px;
+            font-size: 18px;
+            outline: none;
+            width: 100%;
+            padding: 10px 0px 10px 10px;
+            font-size: 16px;
+            border: 1px solid $color-gray-lighter; 
+            outline: none;
+          }
+
+          .clear-text {
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 0 5px;
+            display: none; /* Hidden by default */
+          
+            /* Apply gradient to text */
+            background: linear-gradient(90deg, #15385c, #668eca);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; /* For WebKit browsers */
+            background-clip: text; /* For non-WebKit browsers */
+            color: transparent; /* Hide the default text color */
+          }
+        }
+        .search-controls {
+          display: flex;
+          align-items: center;
+  
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            color: $color-white;
+          }  
+
+         // Styling for the search icon button
+        .search-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $color-gray-darker;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+          color: $color-white;
+
+          svg {
+            width: 20px; 
+            height: 20px;
+            stroke: $color-white; 
+          }
+        }
+
+
+          .close-icon {
+            padding-left: 10px;
+            font-size: 18px;
+            color: $color-gray-darker;
+            cursor: pointer;
+            background-color: transparent;
+          }
+  
+        }
+      }
+    }
+
+    .search-overlay.active {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Background overlay */
+    }
+
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .nav--toggle,
+  .menu--expand-collapse {
+    display: none;
+  }
+
+  .submenu--wrapper li {
+    border-bottom: 0.5px solid $color-blue-light-medium;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+  

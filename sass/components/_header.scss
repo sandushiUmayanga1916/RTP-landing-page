@@ -1,0 +1,71 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: #F8F8F8; /* $color-pearl-white */
+    padding: 15px 34px 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 1) 0px -2px 4px; /* $color-black */
+    z-index: 100;
+  }
+  
+  @media (min-width: 992px) { /* $screen-l */
+    header {
+      padding: 20px 70px 18px;
+    }
+  }
+  
+  @media (min-width: 1920px) { /* $screen-xl */
+    header {
+      padding: 20px 300px 18px;
+    }
+  }
+  
+  header .logo img {
+    width: 110px;
+    height: 44px;
+  }
+  
+  @media (min-width: 992px) { /* $screen-l */
+    header .logo img {
+      width: 160px;
+      height: 61px;
+    }
+  }
+  
+  @media (max-width: 640px) { /* $screen-s */
+    header .logo img {
+      width: 160px;
+      height: 61px;
+    }
+  }
+  
+  @media (max-width: 767px) { /* $screen-m */
+    header .logo img {
+      width: 160px;
+      height: 61px;
+    }
+  }
+  
+  @media (max-width: 991px) { /* max-width $screen-l */
+    nav.main .menu--wrapper .mobile-logo {
+      display: block;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid rgba(221, 221, 221, 0.2); /* rgba($color-gray-lighter, 0.2) */
+      margin-bottom: 20px;
+    }
+  
+    nav.main .menu--wrapper {
+      padding-top: 0; /* Adjust padding-top to accommodate logo */
+    }
+  }
+  
+  @media (max-width: 991px) { /* max-width $screen-l */
+    nav.main .menu--wrapper .mobile-logo img {
+      width: 110px;
+      height: 44px;
+    }
+  }
+  

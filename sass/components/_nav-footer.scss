@@ -1,0 +1,118 @@
+@use '../variables.scss' as *; 
+nav.footer {
+    margin-bottom: 22px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+nav.footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+nav.footer ul li {
+    height: 38px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Show submenu on hover */
+nav.footer ul li:hover .submenu--wrapper {
+    display: block;
+}
+
+/* Hover state for link and SVG */
+nav.footer ul li:hover > a,
+nav.footer ul li:hover > svg path {
+    color: #0077cc; /* Replace with $color-blue-marine */
+    fill: #0077cc; /* Replace with $color-blue-marine */
+}
+
+/* Main menu link style */
+nav.footer ul > li > a {
+    color: #fff; /* Replace with $color-white */
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Add underline on hover */
+nav.footer ul > li > a:hover {
+    text-decoration: underline;
+    color: #0077cc; /* Replace with $color-blue-marine */
+}
+
+/* Main menu SVG style */
+nav.footer ul li > svg {
+    width: 12px;
+    height: auto;
+    fill: #fff; /* Replace with $color-white */
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Submenu wrapper */
+nav.footer ul .submenu--wrapper {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* Replace with $color-white */
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+/* Submenu styles */
+nav.footer ul .submenu--wrapper ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Submenu items */
+nav.footer ul .submenu--wrapper li {
+    height: auto;
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+/* Remove margin for the last item */
+nav.footer ul .submenu--wrapper li:last-child {
+    margin-bottom: 0;
+}
+
+/* Submenu link style */
+nav.footer ul .submenu--wrapper a {
+    color: #000; /* Replace with $color-black */
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Submenu link hover effect */
+nav.footer ul .submenu--wrapper a:hover {
+    text-decoration: underline;
+    color: #0077cc; /* Replace with $color-blue-marine */
+}
+
+nav.footer a {
+    text-decoration: none;
+}
+
+/* Current link style */
+nav.footer a.current {
+    color: #888; /* Replace with $color-gray */
+}
+
+/* Link hover effect */
+nav.footer a:hover {
+    color: #0077cc; /* Replace with $color-blue-marine */
+    text-decoration: underline;
+}
