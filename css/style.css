@@ -362,7 +362,7 @@ nav.main.open .menu--expand-collapse {
     top: 0;
     right: 0;
     height: 100vh;
-    background: #f5f5f5;
+    background: #ffffff;
     opacity: 0;
   }
   nav.main .menu--wrapper .mobile-logo {
@@ -405,7 +405,7 @@ nav.main.open .menu--expand-collapse {
     align-items: center;
     margin-right: 31px;
     padding: 10px 20px;
-    color: #333333;
+    color: #11425d;
     text-decoration: none;
     position: relative;
   }
@@ -862,9 +862,9 @@ nav.main.open .menu--expand-collapse {
   position: relative;
 }
 .laptop-screen-layout .row .note {
+  padding-left: 15px;
   width: 100%;
   font-size: 11px;
-  padding-left: 10px;
   margin-bottom: 20px;
   font-style: italic;
   color: #14425e;
@@ -994,7 +994,6 @@ nav.main.open .menu--expand-collapse {
 }
 .full_side_image_layout .inner_row .content_wrap {
   padding-top: 64px;
-  padding-left: 15px;
   margin-bottom: 48px;
 }
 @media (max-width: 991.98px) {
@@ -1061,7 +1060,7 @@ nav.main.open .menu--expand-collapse {
   font-weight: 700;
   text-align: center;
   color: #FFFFFF;
-  padding-bottom: 64px;
+  padding-bottom: 30px;
 }
 .list_card_layout .content_wrap .description {
   color: #14425e;
@@ -1158,7 +1157,7 @@ nav.main.open .menu--expand-collapse {
   padding-bottom: 48px;
 }
 .card_grid_with_description_layout .content_wrap {
-  padding-bottom: 64px;
+  padding-bottom: 30px;
 }
 .card_grid_with_description_layout .content_wrap .title {
   text-align: center;
@@ -1199,7 +1198,7 @@ nav.main.open .menu--expand-collapse {
 
 .solid_light_card_layout {
   padding-top: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 30px;
   background-color: #2b83a5;
 }
 .solid_light_card_layout .title {

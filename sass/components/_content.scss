@@ -169,9 +169,9 @@ $container-max-widths: (
     position: relative;
     
     .note {
+      padding-left: 15px;
       width: 100%;
       font-size: 11px;
-      padding-left: 10px;
       margin-bottom: 20px;
       font-style: italic;
       color: $color-gray-darker;
@@ -319,7 +319,7 @@ $container-max-widths: (
 
     .content_wrap {
       padding-top: $headerWhiteSpace; // Top padding
-      padding-left: $grid-gutter; 
+      
       margin-bottom: $whiteSpace;
     
       @include media-breakpoint-down(lg) {
@@ -395,7 +395,7 @@ $container-max-widths: (
       font-weight: 700;
       text-align: center;
       color: $color-white;
-      padding-bottom: $headerWhiteSpace;
+      padding-bottom: 30px;
     }
     
     .description {
@@ -524,7 +524,7 @@ $container-max-widths: (
   padding-bottom: $whiteSpace;
 
   .content_wrap {
-    padding-bottom: $headerWhiteSpace;
+    padding-bottom: 30px;
     
     .title {
       text-align: center;
@@ -580,7 +580,7 @@ $container-max-widths: (
 // Solid Light Card Layout
 .solid_light_card_layout {
   padding-top: $whiteSpace;
-  padding-bottom: $whiteSpace;
+  padding-bottom: 30px;
   background-color: $color-sky-blue;
   
   .title {
