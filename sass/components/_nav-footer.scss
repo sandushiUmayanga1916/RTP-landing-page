@@ -1,7 +1,7 @@
 @use '../variables.scss' as *; 
 nav.footer {
     margin-bottom: 22px;
-    font-size: 17px;
+    font-size: calc(16px + 2*(100vw - 320px) / 1600);
     font-weight: 400;
 }
 
@@ -27,14 +27,14 @@ nav.footer ul li:hover .submenu--wrapper {
 /* Hover state for link and SVG */
 nav.footer ul li:hover > a,
 nav.footer ul li:hover > svg path {
-    color: #0077cc; /* Replace with $color-blue-marine */
-    fill: #0077cc; /* Replace with $color-blue-marine */
+    color: #17abd6; /* Replace with $color-blue-marine */
+    fill: #17abd6; /* Replace with $color-blue-marine */
 }
 
 /* Main menu link style */
 nav.footer ul > li > a {
     color: #fff; /* Replace with $color-white */
-    font-size: 17px;
+    font-size: calc(16px + 2*(100vw - 320px) / 1600);
     font-weight: 400;
     text-decoration: none;
     display: inline-block;
@@ -43,7 +43,7 @@ nav.footer ul > li > a {
 /* Add underline on hover */
 nav.footer ul > li > a:hover {
     text-decoration: underline;
-    color: #0077cc; /* Replace with $color-blue-marine */
+    color: #17abd6; /* Replace with $color-blue-marine */
 }
 
 /* Main menu SVG style */
@@ -91,7 +91,7 @@ nav.footer ul .submenu--wrapper li:last-child {
 /* Submenu link style */
 nav.footer ul .submenu--wrapper a {
     color: #000; /* Replace with $color-black */
-    font-size: 17px;
+    font-size: calc(16px + 2*(100vw - 320px) / 1600);
     font-weight: 400;
     text-decoration: none;
 }
@@ -99,7 +99,7 @@ nav.footer ul .submenu--wrapper a {
 /* Submenu link hover effect */
 nav.footer ul .submenu--wrapper a:hover {
     text-decoration: underline;
-    color: #0077cc; /* Replace with $color-blue-marine */
+    color: #17abd6; /* Replace with $color-blue-marine */
 }
 
 nav.footer a {
@@ -113,6 +113,6 @@ nav.footer a.current {
 
 /* Link hover effect */
 nav.footer a:hover {
-    color: #0077cc; /* Replace with $color-blue-marine */
+    color: #17abd6; /* Replace with $color-blue-marine */
     text-decoration: underline;
 }

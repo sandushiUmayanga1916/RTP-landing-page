@@ -1,22 +1,3 @@
-document.querySelectorAll('.menu > li').forEach(item => {
-  item.addEventListener('click', function(event) {
-    // Toggle open class on click
-    this.classList.toggle('open');
-
-    // Prevent click event from bubbling to prevent accidental closing
-    event.stopPropagation();
-  });
-});
-
-document.addEventListener('click', function(event) {
-  document.querySelectorAll('.menu > li').forEach(item => {
-    // Close the submenu if it's currently open
-    if (!item.contains(event.target)) {
-      item.classList.remove('open');
-    }
-  });
-});
-
 window.onload = function(e) {
     document.querySelector(".nav--toggle").onclick = function(e) {
       document.querySelector("nav.main").classList.toggle("open");

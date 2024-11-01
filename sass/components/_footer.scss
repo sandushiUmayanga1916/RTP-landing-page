@@ -1,7 +1,7 @@
 @use '../variables.scss' as *; 
 footer {
    background: $color-gray-darker; 
-    padding: 26px 20px;
+    padding: 40px 0px;
     display: flex;
     flex-direction: column;
     color: #fff; 
@@ -29,7 +29,7 @@ footer a {
 
 footer a.current,
 footer a:hover {
-    color: #0077cc; 
+    color: #17abd6; 
 }
 
 .footer--first .footer--social {
@@ -94,7 +94,7 @@ nav.footer {
 
 @media (min-width: 768px) {
     .footer--site-name {
-        font-size: 20px;
+       font-size: calc(16px + 2*(100vw - 320px) / 1600);
         margin-bottom: 22px;
     }
 }
@@ -108,13 +108,13 @@ nav.footer {
     .footer--newsletter {
         margin-bottom: 34px;
         text-align: right;
-        font-size: 18px;
+       font-size: calc(16px + 2*(100vw - 320px) / 1600);
     }
 }
 
 .footer--copyright,
 .footer--location {
-    font-size: 18px;
+   font-size: calc(16px + 2*(100vw - 320px) / 1600);
     margin-bottom: 16px;
     margin-top: auto;
 }
@@ -122,7 +122,7 @@ nav.footer {
 @media (min-width: 768px) {
     .footer--copyright,
     .footer--location {
-        font-size: 18px;
+       font-size: calc(16px + 2*(100vw - 320px) / 1600);
     }
 }
 
