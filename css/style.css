@@ -818,13 +818,11 @@ nav.main.open .menu--expand-collapse {
 .hero .single-item .content-wrap {
   z-index: 10;
   position: sticky;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .hero .single-item .content-wrap .title {
   padding-bottom: calc(18px + 44 * (100vw - 320px) / 1600);
   font-weight: 700;
-  text-shadow: 0px 4px 13px rgba(0, 0, 0, 0.89);
+  text-shadow: 0px 4px 13px rgba(0, 0, 0, 0.8901960784);
   color: #FFFFFF;
   max-width: 600px;
   text-align: left;
@@ -841,7 +839,7 @@ nav.main.open .menu--expand-collapse {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-color: #1E628C;
+  background-color: #2c928f;
 }
 .hero .single-item .img-wrapper .bg-image {
   height: 100%;
@@ -850,15 +848,42 @@ nav.main.open .menu--expand-collapse {
 }
 
 .laptop-screen-layout {
-  padding-top: 48px;
+  padding-top: 20px;
 }
-.laptop-screen-layout .note {
+.laptop-screen-layout .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.laptop-screen-layout .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  position: relative;
+}
+.laptop-screen-layout .row .note {
   width: 100%;
   font-size: 11px;
-  padding-left: 15px;
+  padding-left: 10px;
   margin-bottom: 20px;
   font-style: italic;
   color: #14425e;
+}
+.laptop-screen-layout .col-12 {
+  padding: 0 15px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .laptop-screen-layout .col-12.col-md-6 {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 992px) {
+  .laptop-screen-layout .col-12.col-lg-6 {
+    width: 50%;
+    flex: 0 0 50%;
+  }
 }
 .laptop-screen-layout .content-wrapper {
   height: 100%;
@@ -867,7 +892,7 @@ nav.main.open .menu--expand-collapse {
 }
 @media (max-width: 767.98px) {
   .laptop-screen-layout .content-wrapper {
-    padding-right: 15px;
+    padding-right: 0;
     margin-bottom: 30px;
   }
 }
@@ -946,11 +971,46 @@ nav.main.open .menu--expand-collapse {
   box-shadow: -1px 0px 30px -7px rgba(0, 0, 0, 0.25);
 }
 .full_side_image_layout .inner_row {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: calc((100vw - 1334px + 15px) / 2);
+}
+@media (max-width: 1399.98px) {
+  .full_side_image_layout .inner_row {
+    margin-left: 28px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .full_side_image_layout .inner_row {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .full_side_image_layout .inner_row {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .full_side_image_layout .inner_row .img_wrapper {
+    padding-right: 0px;
+  }
 }
 .full_side_image_layout .inner_row .content_wrap {
   padding-top: 64px;
+  padding-left: 15px;
+  margin-bottom: 48px;
+}
+@media (max-width: 991.98px) {
+  .full_side_image_layout .inner_row .content_wrap {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .full_side_image_layout .inner_row .content_wrap {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 575.98px) {
+  .full_side_image_layout .inner_row .content_wrap {
+    padding-left: 15px;
+  }
 }
 .full_side_image_layout .inner_row .content_wrap .title {
   font-weight: 700;
@@ -967,6 +1027,11 @@ nav.main.open .menu--expand-collapse {
 }
 .full_side_image_layout .inner_row .content_wrap .description a {
   color: #14425e;
+}
+@media (max-width: 767.98px) {
+  .full_side_image_layout .inner_row .col-12 {
+    padding-left: 0;
+  }
 }
 .full_side_image_layout .inner_row .img_wrapper {
   height: 100%;
@@ -999,7 +1064,7 @@ nav.main.open .menu--expand-collapse {
   padding-bottom: 64px;
 }
 .list_card_layout .content_wrap .description {
-  color: #FFFFFF;
+  color: #14425e;
   padding-bottom: 64px;
 }
 .list_card_layout .content_wrap .description p {
@@ -1011,7 +1076,7 @@ nav.main.open .menu--expand-collapse {
 }
 .list_card_layout .content_wrap .card_list .cards_title {
   font-weight: 700;
-  color: #FFFFFF;
+  color: black;
   padding-bottom: 64px;
   text-align: center;
 }
@@ -1022,10 +1087,18 @@ nav.main.open .menu--expand-collapse {
   border-radius: 15px;
   box-shadow: -1px 0px 20px -7px rgba(0, 0, 0, 0.37);
   transition: all 0.3s;
-  background-color: #FFFFFF;
+  font-size: calc(16px + 2 * (100vw - 320px) / 1600);
 }
 .list_card_layout .content_wrap .card_list .light_cards .single_card:hover, .list_card_layout .content_wrap .card_list .light_cards .single_card:focus {
   transform: scale(1.03);
+}
+.list_card_layout .content_wrap .card_list .light_cards .single_card p {
+  padding-bottom: 8px;
+}
+.list_card_layout .content_wrap .card_list .light_cards .single_card ul li {
+  list-style-type: disc;
+  line-height: 1.6;
+  text-align: left;
 }
 .list_card_layout .content_wrap .card_list .light_cards .single_card .card-body {
   padding: 42px 22px;
@@ -1050,18 +1123,34 @@ nav.main.open .menu--expand-collapse {
   color: #14425e;
   font-size: 16px;
   padding-top: 12px;
-}
-.list_card_layout .content_wrap .card_list .light_cards .single_card .card-body .card_info p {
-  padding-bottom: 8px;
   text-align: center;
 }
-.list_card_layout .content_wrap .card_list .light_cards .single_card .card-body .card_info ul {
-  padding-left: 20px;
+.list_card_layout .content_wrap .card_list .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
+  background-color: transparent;
 }
-.list_card_layout .content_wrap .card_list .light_cards .single_card .card-body .card_info ul li {
-  list-style-type: disc;
-  line-height: 1.6;
-  text-align: left;
+.list_card_layout .content_wrap .card_list .owl-nav button.owl-prev {
+  left: -40px;
+}
+.list_card_layout .content_wrap .card_list .owl-nav button.owl-next {
+  right: -40px;
+}
+@media (max-width: 768px) {
+  .list_card_layout .content_wrap .card_list .owl-nav button.owl-prev {
+    left: -8px;
+  }
+  .list_card_layout .content_wrap .card_list .owl-nav button.owl-prev i {
+    color: black;
+  }
+  .list_card_layout .content_wrap .card_list .owl-nav button.owl-next {
+    right: -8px;
+  }
+  .list_card_layout .content_wrap .card_list .owl-nav button.owl-next i {
+    color: black;
+  }
 }
 
 .card_grid_with_description_layout {
@@ -1165,6 +1254,16 @@ nav.main.open .menu--expand-collapse {
   margin-top: auto;
   display: flex;
   justify-content: center;
+}
+
+.g-3 {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.g-3 > .col {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-bottom: 24px;
 }
 
 .g-3, .g-4 {
